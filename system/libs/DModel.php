@@ -1,0 +1,16 @@
+<?php
+class DModel
+{
+	protected $db = array();
+	
+	public function __construct(){
+		$connect = 'mysql:dbname=pdo_dut_library; host=localhost; charset=utf8';
+		$user = 'root';
+		$pass = 'nth2512000a';
+		$this->db = new Database($connect,$user,$pass);	
+
+	}
+
+}
+
+?>	
